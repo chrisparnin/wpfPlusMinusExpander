@@ -1,0 +1,29 @@
+﻿<Window x:Class="Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="150" Width="300"
+        UseLayoutRounding="True"
+        >
+    <Window.Resources>
+        <ResourceDictionary Source="Assets/PlusMinusExpanderStyles.xaml" />
+    </Window.Resources>
+    <Grid>
+        <StackPanel>
+            <Expander Header="Classic 'FUG' Style Expander" >
+                <Grid Background="Pink">
+                    <TextBlock>Content</TextBlock>
+                </Grid>
+            </Expander>
+            <Expander Header="Plus Minus Expander" Style="{StaticResource PlusMinusExpander}">
+                <Grid Background="Pink">
+                    <TextBlock>Content</TextBlock>
+                </Grid>
+            </Expander>
+            <Expander Header="&lt;-- See Highlight on hover" Style="{StaticResource PlusMinusExpander}">
+                <Grid Background="Pink">
+                    <TextBlock>Content</TextBlock>
+                </Grid>
+            </Expander>
+        </StackPanel>
+    </Grid>
+</Window>
